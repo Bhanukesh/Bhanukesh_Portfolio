@@ -25,14 +25,14 @@ export const Contact = () => {
           >
             <div className="flex flex-col gap-4">
               <a
-                href="mailto:kesh.bhanu11@gmail.com"
+                href="mailto:anirudhtulasi@gmail.com"
                 className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>kesh.bhanu11@gmail.com</span>
+                <span>anirudhtulasi@gmail.com</span>
               </a>
               <a
-                href="https://www.linkedin.com/in/bhanukesh/"
+                href="https://www.linkedin.com/in/anirudh-tulasi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
@@ -41,7 +41,7 @@ export const Contact = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://github.com/Bhanukesh"
+                href="https://github.com/AnirudhTulasi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg bg-secondary hover:bg-secondary/80 transition-colors"
