@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Sales Performance Analysis",
     description: "Managed over 10,000 transactions in the Customer Behavior Analysis using Machine Learning project, boosting ROI by 18% through effective RFM analysis.",
-    tech: ["Python", "Machine Learning", "Tableau"],
+    tech: ["Python", "SQL", "Tableau"],
     date: "01/2024"
   },
   {
