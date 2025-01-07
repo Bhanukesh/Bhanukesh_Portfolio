@@ -30,7 +30,7 @@ export const Contact = () => {
                 href="mailto:kesh.bhanu11@gmail.com"
                 className="flex items-center gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-white transform hover:scale-105 hover:shadow-lg"
               >
-                <Mail className="w-5 h-5" />
+                <Mail className="w-5 h-5 text-[#F97316]" />
                 <span>kesh.bhanu11@gmail.com</span>
               </a>
               <a
@@ -39,7 +39,7 @@ export const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-white transform hover:scale-105 hover:shadow-lg"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-5 h-5 text-[#0A66C2]" />
                 <span>LinkedIn</span>
               </a>
               <a
@@ -48,7 +48,7 @@ export const Contact = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-white transform hover:scale-105 hover:shadow-lg"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-5 h-5 text-white" />
                 <span>GitHub</span>
               </a>
             </div>
