@@ -24,19 +24,19 @@ const getTechIcon = (tech: string) => {
     case 'python':
       return <FileJson className="w-4 h-4 text-[#9b87f5]" />; // Primary Purple
     case 'r':
-      return <Binary className="w-4 h-4 text-[#F97316]" />; // Bright Orange
+      return <Binary className="w-4 h-4 text-[#7E69AB]" />; // Secondary Purple
     case 'sql':
-      return <Database className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
+      return <Database className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
     case 'java':
-      return <Cpu className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
+      return <Cpu className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
     case 'node.js':
-      return <Server className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
+      return <Server className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
     case 'react':
-      return <Code2 className="w-4 h-4 text-[#1EAEDB]" />; // Bright Blue
+      return <Code2 className="w-4 h-4 text-[#F97316]" />; // Bright Orange
     case 'tensorflow':
-      return <BrainCircuit className="w-4 h-4 text-[#7E69AB]" />; // Secondary Purple
+      return <BrainCircuit className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
     case 'docker':
-      return <Container className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
+      return <Container className="w-4 h-4 text-[#1EAEDB]" />; // Bright Blue
     case 'aws':
     case 'aws lambda':
     case 'aws s3':
@@ -44,17 +44,17 @@ const getTechIcon = (tech: string) => {
     case 'git':
       return <Github className="w-4 h-4 text-[#0FA0CE]" />; // Bright Blue
     case 'tableau':
-      return <BarChart className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
+      return <BarChart className="w-4 h-4 text-[#9b87f5]" />; // Primary Purple
     case 'mysql':
     case 'mongodb':
     case 'postgresql':
-      return <Table2 className="w-4 h-4 text-[#9b87f5]" />; // Primary Purple
+      return <Table2 className="w-4 h-4 text-[#7E69AB]" />; // Secondary Purple
     case 'ci/cd':
-      return <Workflow className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
+      return <Workflow className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
     case 'kafka':
       return <Network className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
     case 'data analysis':
-      return <BarChart className="w-4 h-4 text-[#F97316]" />; // Bright Orange
+      return <BarChart className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
     default:
       return <Code2 className="w-4 h-4 text-[#8E9196]" />; // Neutral Gray
   }
