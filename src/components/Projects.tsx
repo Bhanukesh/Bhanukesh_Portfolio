@@ -16,10 +16,7 @@ const projects = [
 • Implemented responsive UI/UX design with React Native
 • Maintained clean, well-documented code on GitHub repository
 
-Technologies used include Golang for backend services, Docker & Kubernetes for containerization and orchestration, Python for data analysis, SQL for database management, and JavaScript/Node.js for frontend development.
-
-Project Timeline: Started April 2024
-GitHub: github.com/Bhanukesh`,
+Technologies used include Golang for backend services, Docker & Kubernetes for containerization and orchestration, Python for data analysis, SQL for database management, and JavaScript/Node.js for frontend development.`,
     tech: ["React Native", "Golang", "Docker", "Kubernetes", "Python", "SQL", "Node.js", "JavaScript"],
     date: "04/2024",
     image: "/lovable-uploads/a813545c-1e02-4b6c-a0c3-82bf0dc996b6.png",
