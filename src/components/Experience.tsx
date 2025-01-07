@@ -9,6 +9,7 @@ const experiences = [
     description: `• Led CU Denver's Generative AI for Clinical Decision Support project, improving patient care and provider efficacy with AI-driven models
 
 • Boosted patient care efficiency by 20% using predictive analytics with R & Python
+
 • Developed an AI healthcare course, adopted by over 200 professionals`
   },
   {
@@ -28,6 +29,7 @@ const experiences = [
     description: `• Corrected revenue forecasts by 30% through predictive modeling
 
 • Consolidated data from diverse sources, boosting processing efficiency by 25%
+
 • Designed 30+ dashboards with Power BI & Tableau for real-time financial decisions`
   }
 ];
