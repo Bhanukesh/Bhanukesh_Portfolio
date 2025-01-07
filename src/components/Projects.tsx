@@ -29,13 +29,41 @@ const projects = [
   },
   {
     title: "Automated Financial Market Analysis",
-    description: `Developed a comprehensive financial data analysis system using AWS and Python. Key achievements include:
-    • Implemented automated data fetching from Alpha Vantage API using AWS Lambda
-    • Created secure S3 bucket storage system for financial data
-    • Built Python-based data processing pipeline
-    • Configured Lambda functions for optimal performance
-    • Implemented error handling and timeout management
-    • Established regular monitoring and cost optimization protocols`,
+    description: `Developed a comprehensive financial data analysis system using AWS and Python. 
+
+Key Steps and Achievements:
+
+1. API Setup:
+• Configured Alpha Vantage API integration for financial data retrieval
+• Implemented secure API key management
+• Set up automated daily stock price data collection
+
+2. AWS Lambda Configuration:
+• Created Python-based Lambda function for automated data fetching
+• Resolved library compatibility challenges
+• Optimized function performance and timeout settings
+
+3. AWS S3 Implementation:
+• Configured secure S3 bucket (financebucket11) for data storage
+• Established proper permissions and security protocols
+• Implemented data integrity verification systems
+
+4. Technical Challenges Overcome:
+• Successfully migrated from requests to http.client for Lambda compatibility
+• Optimized Lambda timeout settings for reliable execution
+• Implemented cost-effective data storage solutions
+
+5. Data Processing Pipeline:
+• Developed automated data verification systems
+• Implemented data integrity checks
+• Created efficient data processing workflows
+
+Future Enhancements:
+• Integration of Python visualization libraries
+• Implementation of advanced monitoring systems
+• Cost optimization strategies
+
+The system now successfully automates financial data collection, storage, and processing, providing a robust foundation for market analysis.`,
     tech: ["Python", "AWS Lambda", "AWS S3", "Alpha Vantage API"],
     date: "09/2024",
     images: [
@@ -116,7 +144,7 @@ export const Projects = () => {
               className="glass-card rounded-lg overflow-hidden hover:shadow-2xl transition-shadow"
             >
               {project.image && (
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -125,21 +153,21 @@ export const Projects = () => {
                 </div>
               )}
               {project.images && (
-                <div className="grid grid-cols-2 gap-4 p-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
                   {project.images.map((img, imgIndex) => (
                     <img
                       key={imgIndex}
                       src={img}
                       alt={`${project.title} visualization ${imgIndex + 1}`}
-                      className="w-full h-48 object-contain rounded-lg"
+                      className="w-full h-64 object-contain rounded-lg cursor-pointer hover:scale-105 transition-transform"
                     />
                   ))}
                 </div>
               )}
-              <div className="p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold">{project.title}</h3>
-                  <div className="flex gap-2">
+              <div className="p-8">
+                <div className="flex justify-between items-start mb-6">
+                  <h3 className="text-2xl font-semibold">{project.title}</h3>
+                  <div className="flex gap-3">
                     {project.github && (
                       <a 
                         href={project.github} 
@@ -147,7 +175,7 @@ export const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Github className="w-5 h-5" />
+                        <Github className="w-6 h-6" />
                       </a>
                     )}
                     {project.liveUrl && (
@@ -157,17 +185,17 @@ export const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <ExternalLink className="w-5 h-5" />
+                        <ExternalLink className="w-6 h-6" />
                       </a>
                     )}
                   </div>
                 </div>
-                <p className="text-muted-foreground mb-4 whitespace-pre-line">{project.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="text-muted-foreground mb-6 whitespace-pre-line text-lg leading-relaxed">{project.description}</p>
+                <div className="flex flex-wrap gap-3">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 text-sm rounded-full bg-secondary text-secondary-foreground"
+                      className="px-4 py-2 text-sm rounded-full bg-secondary text-secondary-foreground font-medium"
                     >
                       {tech}
                     </span>
