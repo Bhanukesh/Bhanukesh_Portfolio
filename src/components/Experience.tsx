@@ -26,8 +26,9 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-secondary/50">
-      <div className="container mx-auto px-4">
+    <section id="experience" className="py-20 bg-gradient-to-br from-[#F97316] to-[#D946EF] relative">
+      <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+      <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,8 +36,8 @@ export const Experience = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Experience</h2>
-          <p className="text-muted-foreground">My professional journey</p>
+          <h2 className="text-3xl font-bold mb-4 text-white">Experience</h2>
+          <p className="text-white/80">My professional journey</p>
         </motion.div>
         <div className="max-w-3xl mx-auto">
           {experiences.map((exp, index) => (
@@ -46,17 +47,17 @@ export const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="mb-8 relative pl-8 border-l-2 border-primary/20"
+              className="mb-8 relative pl-8 border-l-2 border-white/30"
             >
-              <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-              <div className="glass-card rounded-lg p-6">
+              <div className="absolute left-[-9px] top-0 w-4 h-4 rounded-full bg-white shadow-lg"></div>
+              <div className="glass-card rounded-lg p-6 hover:transform hover:scale-[1.02] transition-all duration-300">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-semibold">{exp.title}</h3>
-                  <span className="text-sm text-muted-foreground">{exp.period}</span>
+                  <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
+                  <span className="text-sm text-white/80">{exp.period}</span>
                 </div>
-                <p className="text-lg text-primary/80 mb-2">{exp.company}</p>
-                <p className="text-sm text-muted-foreground mb-2">{exp.location}</p>
-                <p className="text-muted-foreground">{exp.description}</p>
+                <p className="text-lg text-white/90 mb-2">{exp.company}</p>
+                <p className="text-sm text-white/80 mb-2">{exp.location}</p>
+                <p className="text-white/80">{exp.description}</p>
               </div>
             </motion.div>
           ))}

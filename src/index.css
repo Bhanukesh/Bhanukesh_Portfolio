@@ -68,6 +68,10 @@
     animation: slideUp 0.5s ease-out forwards;
   }
 
+  .text-shadow-lg {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -86,5 +90,13 @@
       transform: translateY(0);
       opacity: 1;
     }
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#F97316] to-[#D946EF];
   }
 }
