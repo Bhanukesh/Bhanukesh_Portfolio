@@ -22,41 +22,41 @@ interface ProjectTechBadgeProps {
 const getTechIcon = (tech: string) => {
   switch (tech.toLowerCase()) {
     case 'python':
-      return <FileJson className="w-4 h-4 text-[#9b87f5]" />; // Primary Purple
+      return <FileJson className="w-4 h-4 text-[#F97316]" />; // Orange
     case 'r':
-      return <Binary className="w-4 h-4 text-[#7E69AB]" />; // Secondary Purple
+      return <Binary className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
     case 'sql':
-      return <Database className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
+      return <Database className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
     case 'java':
       return <Cpu className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
     case 'node.js':
-      return <Server className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
+      return <Server className="w-4 h-4 text-[#33C3F0]" />; // Sky Blue
     case 'react':
-      return <Code2 className="w-4 h-4 text-[#F97316]" />; // Bright Orange
+      return <Code2 className="w-4 h-4 text-[#1EAEDB]" />; // Bright Blue
     case 'tensorflow':
-      return <BrainCircuit className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
+      return <BrainCircuit className="w-4 h-4 text-[#0FA0CE]" />; // Deep Blue
     case 'docker':
-      return <Container className="w-4 h-4 text-[#1EAEDB]" />; // Bright Blue
+      return <Container className="w-4 h-4 text-[#9b87f5]" />; // Primary Purple
     case 'aws':
     case 'aws lambda':
     case 'aws s3':
-      return <Cloud className="w-4 h-4 text-[#33C3F0]" />; // Sky Blue
+      return <Cloud className="w-4 h-4 text-[#7E69AB]" />; // Secondary Purple
     case 'git':
-      return <Github className="w-4 h-4 text-[#0FA0CE]" />; // Deep Blue
+      return <Github className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
     case 'tableau':
-      return <BarChart className="w-4 h-4 text-[#9b87f5]" />; // Primary Purple
+      return <BarChart className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
     case 'mysql':
-      return <Table2 className="w-4 h-4 text-[#7E69AB]" />; // Secondary Purple
+      return <Table2 className="w-4 h-4 text-[#F97316]" />; // Orange
     case 'mongodb':
-      return <Database className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
+      return <Database className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
     case 'postgresql':
-      return <Table2 className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
+      return <Table2 className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
     case 'ci/cd':
-      return <Workflow className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
+      return <Workflow className="w-4 h-4 text-[#33C3F0]" />; // Sky Blue
     case 'kafka':
-      return <Network className="w-4 h-4 text-[#F97316]" />; // Bright Orange
+      return <Network className="w-4 h-4 text-[#1EAEDB]" />; // Bright Blue
     case 'data analysis':
-      return <BarChart className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
+      return <BarChart className="w-4 h-4 text-[#0FA0CE]" />; // Deep Blue
     default:
       return <Code2 className="w-4 h-4 text-[#8E9196]" />; // Neutral Gray
   }

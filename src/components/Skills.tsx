@@ -19,40 +19,40 @@ import {
 const skills = [
   { 
     category: "Languages", 
-    icon: <Code2 className="w-6 h-6 mb-2 text-[#9b87f5]" />,
+    icon: <Code2 className="w-6 h-6 mb-2 text-[#F97316]" />,
     items: [
-      { name: "Python", icon: <FileJson className="w-4 h-4 text-[#9b87f5]" /> },
-      { name: "R", icon: <Binary className="w-4 h-4 text-[#7E69AB]" /> },
-      { name: "SQL", icon: <Database className="w-4 h-4 text-[#6E59A5]" /> },
+      { name: "Python", icon: <FileJson className="w-4 h-4 text-[#F97316]" /> },
+      { name: "R", icon: <Binary className="w-4 h-4 text-[#D946EF]" /> },
+      { name: "SQL", icon: <Database className="w-4 h-4 text-[#0EA5E9]" /> },
       { name: "Java", icon: <Cpu className="w-4 h-4 text-[#8B5CF6]" /> }
     ]
   },
   { 
     category: "Frameworks", 
-    icon: <Workflow className="w-6 h-6 mb-2 text-[#F97316]" />,
+    icon: <Workflow className="w-6 h-6 mb-2 text-[#D946EF]" />,
     items: [
-      { name: "Node.js", icon: <Server className="w-4 h-4 text-[#D946EF]" /> },
-      { name: "React", icon: <Code2 className="w-4 h-4 text-[#F97316]" /> },
-      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-[#0EA5E9]" /> }
+      { name: "Node.js", icon: <Server className="w-4 h-4 text-[#33C3F0]" /> },
+      { name: "React", icon: <Code2 className="w-4 h-4 text-[#1EAEDB]" /> },
+      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-[#0FA0CE]" /> }
     ]
   },
   { 
     category: "Tools", 
-    icon: <BrainCircuit className="w-6 h-6 mb-2 text-[#D946EF]" />,
+    icon: <BrainCircuit className="w-6 h-6 mb-2 text-[#0EA5E9]" />,
     items: [
-      { name: "Docker", icon: <Container className="w-4 h-4 text-[#1EAEDB]" /> },
-      { name: "AWS", icon: <Cloud className="w-4 h-4 text-[#33C3F0]" /> },
-      { name: "Git", icon: <Github className="w-4 h-4 text-[#0FA0CE]" /> },
-      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-[#9b87f5]" /> }
+      { name: "Docker", icon: <Container className="w-4 h-4 text-[#9b87f5]" /> },
+      { name: "AWS", icon: <Cloud className="w-4 h-4 text-[#7E69AB]" /> },
+      { name: "Git", icon: <Github className="w-4 h-4 text-[#6E59A5]" /> },
+      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-[#8B5CF6]" /> }
     ]
   },
   { 
     category: "Databases", 
-    icon: <Database className="w-6 h-6 mb-2 text-[#0EA5E9]" />,
+    icon: <Database className="w-6 h-6 mb-2 text-[#8B5CF6]" />,
     items: [
-      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-[#7E69AB]" /> },
-      { name: "MongoDB", icon: <Database className="w-4 h-4 text-[#6E59A5]" /> },
-      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-[#8B5CF6]" /> }
+      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-[#F97316]" /> },
+      { name: "MongoDB", icon: <Database className="w-4 h-4 text-[#D946EF]" /> },
+      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-[#0EA5E9]" /> }
     ]
   }
 ];
