@@ -28,7 +28,7 @@ export const Hero = () => {
             transition={{ delay: 0.3 }}
             className="inline-block px-4 py-2 mb-4 text-sm font-medium rounded-full bg-white/20 backdrop-blur-sm text-white border border-white/30 shadow-lg"
           >
-            Research Analyst & Developer
+            Analyst
           </motion.span>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white text-shadow-lg">
             Bhanukesh Balabhadrapatruni
