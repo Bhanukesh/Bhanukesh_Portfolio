@@ -3,8 +3,9 @@ import { Mail, Linkedin, Github } from "lucide-react";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-[#FEC6A1] to-[#9b87f5] relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+    <section id="contact" className="py-20 bg-black relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#FEC6A1]/10 to-[#9b87f5]/10 opacity-50"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-[#9b87f5] to-[#FEC6A1]">
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-      </div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-black">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#9b87f5]/20 to-[#FEC6A1]/20 opacity-50"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

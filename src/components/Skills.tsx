@@ -59,8 +59,9 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-[#0EA5E9] to-[#8B5CF6] relative">
-      <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+    <section id="skills" className="py-20 bg-black relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0EA5E9]/10 to-[#8B5CF6]/10 opacity-50"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

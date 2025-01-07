@@ -26,8 +26,9 @@ const experiences = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-gradient-to-br from-[#F97316] to-[#D946EF] relative">
-      <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+    <section id="experience" className="py-20 bg-black relative">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#F97316]/10 to-[#D946EF]/10 opacity-50"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
