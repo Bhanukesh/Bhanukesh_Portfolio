@@ -13,9 +13,19 @@ const projects = [
   },
   {
     title: "Sales Performance Analysis",
-    description: "Managed over 10,000 transactions in the Customer Behavior Analysis using Machine Learning project, boosting ROI by 18% through effective RFM analysis.",
+    description: `Conducted comprehensive customer behavior analysis using RFM segmentation, analyzing over 10,000 transactions. Key achievements include:
+    • Successfully segmented customers into Champions, Loyal, At-Risk categories
+    • Improved marketing ROI by 18% through targeted campaigns
+    • Enhanced customer retention by 25% with personalized promotions
+    • Implemented advanced Tableau dashboards for dynamic insights`,
     tech: ["Python", "SQL", "Tableau"],
-    date: "01/2024"
+    date: "01/2024",
+    images: [
+      "/lovable-uploads/ecac5340-86da-4175-9706-742cfb0b2077.png",
+      "/lovable-uploads/cb259c00-830a-4c30-ae00-393012a472f9.png",
+      "/lovable-uploads/5e82cddc-34ab-44aa-85af-e0addffad898.png"
+    ],
+    github: "#"
   },
   {
     title: "Universal Analytics API",
@@ -39,7 +49,7 @@ export const Projects = () => {
           <h2 className="text-3xl font-bold mb-4">Projects</h2>
           <p className="text-muted-foreground">Featured work and achievements</p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -58,18 +68,32 @@ export const Projects = () => {
                   />
                 </div>
               )}
+              {project.images && (
+                <div className="grid grid-cols-3 gap-2 p-4">
+                  {project.images.map((img, imgIndex) => (
+                    <img
+                      key={imgIndex}
+                      src={img}
+                      alt={`${project.title} visualization ${imgIndex + 1}`}
+                      className="w-full h-32 object-cover rounded-lg"
+                    />
+                  ))}
+                </div>
+              )}
               <div className="p-6">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-semibold">{project.title}</h3>
                   <div className="flex gap-2">
-                    <a 
-                      href={project.github} 
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="w-5 h-5" />
-                    </a>
+                    {project.github && (
+                      <a 
+                        href={project.github} 
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="w-5 h-5" />
+                      </a>
+                    )}
                     {project.liveUrl && (
                       <a 
                         href={project.liveUrl} 
@@ -82,7 +106,7 @@ export const Projects = () => {
                     )}
                   </div>
                 </div>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
+                <p className="text-muted-foreground mb-4 whitespace-pre-line">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, techIndex) => (
                     <span
