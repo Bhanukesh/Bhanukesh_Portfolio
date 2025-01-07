@@ -45,6 +45,22 @@ const projects = [
     github: "#"
   },
   {
+    title: "Universal Analytics API",
+    description: `Developed a comprehensive analytics API with real-time visualization capabilities. Key achievements include:
+    • Created interactive dashboards for data analysis and visualization
+    • Implemented multiple visualization techniques for data representation
+    • Developed real-time data processing pipeline using Kafka for continuous updates
+    • Built scalable MySQL database architecture for efficient data storage
+    • Enhanced data accessibility and decision-making efficiency by 25%`,
+    tech: ["Python", "Docker", "CI/CD", "Kafka", "MySQL", "Tableau"],
+    date: "03/2024",
+    images: [
+      "/lovable-uploads/04d510e5-00ed-4cce-88dc-c10deb6fa4da.png",
+      "/lovable-uploads/f793355c-af74-417c-b6ba-0f22057bb9a3.png"
+    ],
+    github: "#"
+  },
+  {
     title: "COVID-19 Spread Across the US",
     description: `Analyzed COVID-19 data across US states using multiple visualization techniques to provide comprehensive insights:
 
