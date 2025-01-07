@@ -22,41 +22,41 @@ interface ProjectTechBadgeProps {
 const getTechIcon = (tech: string) => {
   switch (tech.toLowerCase()) {
     case 'python':
-      return <FileJson className="w-4 h-4 text-[#F97316]" />;
+      return <FileJson className="w-4 h-4 text-[#FFD43B]" />; // Python Yellow
     case 'r':
-      return <Binary className="w-4 h-4 text-[#D946EF]" />;
+      return <Binary className="w-4 h-4 text-[#276DC3]" />; // R Blue
     case 'sql':
-      return <Database className="w-4 h-4 text-[#0EA5E9]" />;
+      return <Database className="w-4 h-4 text-[#00758F]" />; // MySQL Blue
     case 'java':
-      return <Cpu className="w-4 h-4 text-[#8B5CF6]" />;
+      return <Cpu className="w-4 h-4 text-[#E76F00]" />; // Java Orange
     case 'node.js':
-      return <Server className="w-4 h-4 text-[#403E43]" />;
+      return <Server className="w-4 h-4 text-[#68A063]" />; // Node Green
     case 'react':
-      return <Code2 className="w-4 h-4 text-[#33C3F0]" />;
+      return <Code2 className="w-4 h-4 text-[#61DAFB]" />; // React Blue
     case 'tensorflow':
-      return <BrainCircuit className="w-4 h-4 text-[#FEC6A1]" />;
+      return <BrainCircuit className="w-4 h-4 text-[#FF6F00]" />; // TensorFlow Orange
     case 'docker':
-      return <Container className="w-4 h-4 text-[#E5DEFF]" />;
+      return <Container className="w-4 h-4 text-[#2496ED]" />; // Docker Blue
     case 'aws':
     case 'aws lambda':
     case 'aws s3':
-      return <Cloud className="w-4 h-4 text-[#C8C8C9]" />;
+      return <Cloud className="w-4 h-4 text-[#FF9900]" />; // AWS Orange
     case 'git':
-      return <Github className="w-4 h-4 text-[#ea384c]" />;
+      return <Github className="w-4 h-4 text-[#F05032]" />; // Git Orange-Red
     case 'tableau':
-      return <BarChart className="w-4 h-4 text-[#D3E4FD]" />;
+      return <BarChart className="w-4 h-4 text-[#E97627]" />; // Tableau Orange
     case 'mysql':
     case 'mongodb':
     case 'postgresql':
-      return <Table2 className="w-4 h-4 text-[#F2FCE2]" />;
+      return <Table2 className="w-4 h-4 text-[#4479A1]" />; // PostgreSQL Blue
     case 'ci/cd':
-      return <Workflow className="w-4 h-4 text-[#FEF7CD]" />;
+      return <Workflow className="w-4 h-4 text-[#43A047]" />; // Green
     case 'kafka':
-      return <Network className="w-4 h-4 text-[#6E59A5]" />;
+      return <Network className="w-4 h-4 text-[#231F20]" />; // Kafka Black
     case 'data analysis':
-      return <BarChart className="w-4 h-4 text-[#1EAEDB]" />;
+      return <BarChart className="w-4 h-4 text-[#9C27B0]" />; // Purple
     default:
-      return <Code2 className="w-4 h-4 text-[#7E69AB]" />;
+      return <Code2 className="w-4 h-4 text-[#6E768166]" />; // Neutral Gray
   }
 };
 
