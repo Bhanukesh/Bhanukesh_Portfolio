@@ -6,7 +6,7 @@ import {
   Cloud,
   BrainCircuit,
   BarChart,
-  Git,
+  Github,
   Table2
 } from "lucide-react";
 
@@ -38,7 +38,7 @@ const getItemIcon = (item: string) => {
     case 'aws':
       return <Cloud className="w-4 h-4" />;
     case 'git':
-      return <Git className="w-4 h-4" />;
+      return <Github className="w-4 h-4" />;
     case 'tableau':
       return <BarChart className="w-4 h-4" />;
     case 'mysql':
