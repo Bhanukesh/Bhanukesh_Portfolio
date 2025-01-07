@@ -38,8 +38,8 @@ const projects = [
     tech: ["Python", "Docker", "CI/CD", "Kafka", "MySQL", "Tableau"],
     date: "09/2024",
     images: [
-      "/lovable-uploads/991fdf54-a6e0-405b-ac7e-606bc1024040.png",
-      "/lovable-uploads/37a40563-4a16-4955-adb7-d649de06ffb1.png"
+      "/lovable-uploads/04d510e5-00ed-4cce-88dc-c10deb6fa4da.png",
+      "/lovable-uploads/f793355c-af74-417c-b6ba-0f22057bb9a3.png"
     ],
     github: "#"
   },
