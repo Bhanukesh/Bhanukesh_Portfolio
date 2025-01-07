@@ -35,7 +35,7 @@ const getTechIcon = (tech: string) => {
     case 'node.js':
       return <Server className="w-4 h-4 text-green-300" />;
     case 'react':
-      return <Code2 className="w-4 h-4 text-blue-200" />;
+      return <Code2 className="w-4 h-4 text-blue-300" />;
     case 'tensorflow':
       return <BrainCircuit className="w-4 h-4 text-purple-300" />;
     
@@ -86,7 +86,7 @@ export const ProjectTechBadge = ({ tech }: ProjectTechBadgeProps) => {
       
       // Frameworks
       case 'node.js': return 'text-green-300';
-      case 'react': return 'text-blue-200';
+      case 'react': return 'text-blue-300';
       case 'tensorflow': return 'text-purple-300';
       
       // Tools
@@ -112,7 +112,7 @@ export const ProjectTechBadge = ({ tech }: ProjectTechBadgeProps) => {
   };
 
   return (
-    <span className={`px-4 py-2 text-sm rounded-full bg-white/10 backdrop-blur-sm ${getTextColor(tech)} font-medium flex items-center gap-2 border border-white/20 hover:bg-white/20 transition-colors`}>
+    <span className={`px-4 py-2 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm ${getTextColor(tech)} flex items-center gap-2 border border-white/20 hover:bg-white/20 transition-colors`}>
       {getTechIcon(tech)}
       {tech}
     </span>

@@ -32,7 +32,7 @@ const skills = [
     icon: <Workflow className="w-6 h-6 mb-2 text-green-300" />,
     items: [
       { name: "Node.js", icon: <Server className="w-4 h-4 text-green-300" /> },
-      { name: "React", icon: <Code2 className="w-4 h-4 text-blue-200" /> },
+      { name: "React", icon: <Code2 className="w-4 h-4 text-blue-300" /> },
       { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-purple-300" /> }
     ]
   },
@@ -60,7 +60,7 @@ const skills = [
 export const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-black relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0EA5E9]/10 to-[#8B5CF6]/10 opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#0EA5E9]/10 opacity-50"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,119,198,0.2),rgba(255,255,255,0))]"></div>
       <div className="container mx-auto px-4 relative">
         <motion.div
@@ -93,7 +93,7 @@ export const Skills = () => {
                 {skillGroup.items.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className={`px-3 py-2 text-sm rounded-full bg-white/10 backdrop-blur-sm flex items-center gap-2 hover:bg-white/20 transition-colors ${
+                    className={`px-3 py-2 text-sm font-medium rounded-full bg-white/10 backdrop-blur-sm flex items-center gap-2 hover:bg-white/20 transition-colors ${
                       skill.name.toLowerCase() === 'git' ? 'text-white' : getTextColor(skill.name)
                     }`}
                   >
@@ -121,7 +121,7 @@ const getTextColor = (tech: string) => {
     
     // Frameworks
     case 'node.js': return 'text-green-300';
-    case 'react': return 'text-blue-200';
+    case 'react': return 'text-blue-300';
     case 'tensorflow': return 'text-purple-300';
     
     // Tools
