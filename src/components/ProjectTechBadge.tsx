@@ -42,19 +42,21 @@ const getTechIcon = (tech: string) => {
     case 'aws s3':
       return <Cloud className="w-4 h-4 text-[#33C3F0]" />; // Sky Blue
     case 'git':
-      return <Github className="w-4 h-4 text-[#0FA0CE]" />; // Bright Blue
+      return <Github className="w-4 h-4 text-[#0FA0CE]" />; // Deep Blue
     case 'tableau':
       return <BarChart className="w-4 h-4 text-[#9b87f5]" />; // Primary Purple
     case 'mysql':
-    case 'mongodb':
-    case 'postgresql':
       return <Table2 className="w-4 h-4 text-[#7E69AB]" />; // Secondary Purple
+    case 'mongodb':
+      return <Database className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
+    case 'postgresql':
+      return <Table2 className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
     case 'ci/cd':
-      return <Workflow className="w-4 h-4 text-[#6E59A5]" />; // Tertiary Purple
+      return <Workflow className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
     case 'kafka':
-      return <Network className="w-4 h-4 text-[#8B5CF6]" />; // Vivid Purple
+      return <Network className="w-4 h-4 text-[#F97316]" />; // Bright Orange
     case 'data analysis':
-      return <BarChart className="w-4 h-4 text-[#D946EF]" />; // Magenta Pink
+      return <BarChart className="w-4 h-4 text-[#0EA5E9]" />; // Ocean Blue
     default:
       return <Code2 className="w-4 h-4 text-[#8E9196]" />; // Neutral Gray
   }
