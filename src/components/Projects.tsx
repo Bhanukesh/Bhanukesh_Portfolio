@@ -4,12 +4,27 @@ import { ProjectCard } from "./ProjectCard";
 const projects = [
   {
     title: "BMI Application",
-    description: "Developed a fitness app offering BMI calculations and personalized advice. Integrated Python, SQL, Node.js, and Heroku for robust functionality.",
-    tech: ["Python", "Node.js", "SQL"],
-    date: "10/2023",
+    description: `Developed a comprehensive BMI (Body Mass Index) calculator application using React Native, providing personalized health and lifestyle recommendations based on user results. Key features and achievements include:
+
+• Built robust backend services in Golang for handling user data and BMI calculations
+• Implemented personalized health advice system based on BMI results
+• Integrated Docker and Kubernetes for improved scalability and deployment
+• Utilized Python for data analysis and health recommendation algorithms
+• Created efficient database structure using SQL for user data management
+• Developed RESTful APIs with Node.js and Express
+• Successfully tested and deployed on virtual simulators
+• Implemented responsive UI/UX design with React Native
+• Maintained clean, well-documented code on GitHub repository
+
+Technologies used include Golang for backend services, Docker & Kubernetes for containerization and orchestration, Python for data analysis, SQL for database management, and JavaScript/Node.js for frontend development.
+
+Project Timeline: Started April 2024
+GitHub: github.com/Bhanukesh`,
+    tech: ["React Native", "Golang", "Docker", "Kubernetes", "Python", "SQL", "Node.js", "JavaScript"],
+    date: "04/2024",
     image: "/lovable-uploads/a813545c-1e02-4b6c-a0c3-82bf0dc996b6.png",
     liveUrl: "https://bmiyoga-a0809dbd427a.herokuapp.com/",
-    github: "#"
+    github: "https://github.com/Bhanukesh"
   },
   {
     title: "Sales Performance Analysis",

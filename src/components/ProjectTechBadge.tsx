@@ -12,7 +12,9 @@ import {
   Server,
   Cpu,
   Container,
-  Network
+  Network,
+  Smartphone,
+  Boxes
 } from "lucide-react";
 
 interface ProjectTechBadgeProps {
@@ -21,7 +23,7 @@ interface ProjectTechBadgeProps {
 
 const getTechIcon = (tech: string) => {
   switch (tech.toLowerCase()) {
-    // Languages
+    // Languages & Frameworks
     case 'python':
       return <FileJson className="w-4 h-4 text-red-300" />;
     case 'r':
@@ -30,18 +32,24 @@ const getTechIcon = (tech: string) => {
       return <Database className="w-4 h-4 text-blue-300" />;
     case 'java':
       return <Cpu className="w-4 h-4 text-orange-300" />;
+    case 'javascript':
+      return <Code2 className="w-4 h-4 text-yellow-300" />;
+    case 'golang':
+      return <Code2 className="w-4 h-4 text-cyan-300" />;
+    case 'react native':
+      return <Smartphone className="w-4 h-4 text-blue-300" />;
     
-    // Frameworks
+    // Infrastructure & Tools
+    case 'docker':
+      return <Container className="w-4 h-4 text-blue-300" />;
+    case 'kubernetes':
+      return <Boxes className="w-4 h-4 text-blue-300" />;
     case 'node.js':
       return <Server className="w-4 h-4 text-green-300" />;
     case 'react':
       return <Code2 className="w-4 h-4 text-blue-300" />;
     case 'tensorflow':
       return <BrainCircuit className="w-4 h-4 text-purple-300" />;
-    
-    // Tools
-    case 'docker':
-      return <Container className="w-4 h-4 text-blue-300" />;
     case 'aws':
       return <Cloud className="w-4 h-4 text-orange-300" />;
     case 'git':
@@ -78,19 +86,21 @@ const getTechIcon = (tech: string) => {
 export const ProjectTechBadge = ({ tech }: ProjectTechBadgeProps) => {
   const getTextColor = (tech: string) => {
     switch (tech.toLowerCase()) {
-      // Languages
+      // Languages & Frameworks
       case 'python': return 'text-red-300';
       case 'r': return 'text-yellow-300';
       case 'sql': return 'text-blue-300';
       case 'java': return 'text-orange-300';
+      case 'javascript': return 'text-yellow-300';
+      case 'golang': return 'text-cyan-300';
+      case 'react native': return 'text-blue-300';
       
-      // Frameworks
+      // Infrastructure & Tools
+      case 'docker': return 'text-blue-300';
+      case 'kubernetes': return 'text-blue-300';
       case 'node.js': return 'text-green-300';
       case 'react': return 'text-blue-300';
       case 'tensorflow': return 'text-purple-300';
-      
-      // Tools
-      case 'docker': return 'text-blue-300';
       case 'aws': return 'text-orange-300';
       case 'git': return 'text-white';
       case 'tableau': return 'text-pink-300';
