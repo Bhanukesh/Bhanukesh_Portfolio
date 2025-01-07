@@ -23,7 +23,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2 }}
       viewport={{ once: true }}
-      className="glass-card rounded-lg overflow-hidden hover:shadow-2xl transition-shadow"
+      className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
     >
       {project.image && (
         <div className="relative h-64 overflow-hidden">
@@ -48,12 +48,12 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
       )}
       <div className="p-8">
         <div className="flex justify-between items-start mb-6">
-          <h3 className="text-2xl font-semibold text-gradient">{project.title}</h3>
+          <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
           <div className="flex gap-3">
             {project.github && (
               <a 
                 href={project.github} 
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-white/60 hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -63,7 +63,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
             {project.liveUrl && (
               <a 
                 href={project.liveUrl} 
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-white/60 hover:text-white transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -72,7 +72,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
             )}
           </div>
         </div>
-        <p className="text-muted-foreground mb-6 whitespace-pre-line text-lg leading-relaxed">
+        <p className="text-white/80 mb-6 whitespace-pre-line text-lg leading-relaxed">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-3">

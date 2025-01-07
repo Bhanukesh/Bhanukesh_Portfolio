@@ -121,7 +121,7 @@ The system now successfully automates financial data collection, storage, and pr
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gradient-to-br from-[#8B5CF6] to-[#D946EF] relative">
+    <section id="projects" className="py-20 bg-black relative">
       <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
       <div className="container mx-auto px-4 relative">
         <motion.div
