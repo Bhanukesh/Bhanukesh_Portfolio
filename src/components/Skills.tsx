@@ -19,40 +19,40 @@ import {
 const skills = [
   { 
     category: "Languages", 
-    icon: <Code2 className="w-6 h-6 mb-2 text-[#F97316]" />,
+    icon: <Code2 className="w-6 h-6 mb-2 text-red-500" />,
     items: [
-      { name: "Python", icon: <FileJson className="w-4 h-4 text-[#F97316]" /> },
-      { name: "R", icon: <Binary className="w-4 h-4 text-[#D946EF]" /> },
-      { name: "SQL", icon: <Database className="w-4 h-4 text-[#0EA5E9]" /> },
-      { name: "Java", icon: <Cpu className="w-4 h-4 text-[#8B5CF6]" /> }
+      { name: "Python", icon: <FileJson className="w-4 h-4 text-red-500" /> },
+      { name: "R", icon: <Binary className="w-4 h-4 text-yellow-400" /> },
+      { name: "SQL", icon: <Database className="w-4 h-4 text-blue-500" /> },
+      { name: "Java", icon: <Cpu className="w-4 h-4 text-orange-500" /> }
     ]
   },
   { 
     category: "Frameworks", 
-    icon: <Workflow className="w-6 h-6 mb-2 text-[#D946EF]" />,
+    icon: <Workflow className="w-6 h-6 mb-2 text-green-800" />,
     items: [
-      { name: "Node.js", icon: <Server className="w-4 h-4 text-[#33C3F0]" /> },
-      { name: "React", icon: <Code2 className="w-4 h-4 text-[#1EAEDB]" /> },
-      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-[#0FA0CE]" /> }
+      { name: "Node.js", icon: <Server className="w-4 h-4 text-green-800" /> },
+      { name: "React", icon: <Code2 className="w-4 h-4 text-blue-200" /> },
+      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-purple-500" /> }
     ]
   },
   { 
     category: "Tools", 
-    icon: <BrainCircuit className="w-6 h-6 mb-2 text-[#0EA5E9]" />,
+    icon: <BrainCircuit className="w-6 h-6 mb-2 text-blue-900" />,
     items: [
-      { name: "Docker", icon: <Container className="w-4 h-4 text-[#9b87f5]" /> },
-      { name: "AWS", icon: <Cloud className="w-4 h-4 text-[#7E69AB]" /> },
-      { name: "Git", icon: <Github className="w-4 h-4 text-[#6E59A5]" /> },
-      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-[#8B5CF6]" /> }
+      { name: "Docker", icon: <Container className="w-4 h-4 text-blue-900" /> },
+      { name: "AWS", icon: <Cloud className="w-4 h-4 text-orange-700" /> },
+      { name: "Git", icon: <Github className="w-4 h-4 text-white" /> },
+      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-pink-500" /> }
     ]
   },
   { 
     category: "Databases", 
-    icon: <Database className="w-6 h-6 mb-2 text-[#8B5CF6]" />,
+    icon: <Database className="w-6 h-6 mb-2 text-amber-700" />,
     items: [
-      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-[#F97316]" /> },
-      { name: "MongoDB", icon: <Database className="w-4 h-4 text-[#D946EF]" /> },
-      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-[#0EA5E9]" /> }
+      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-amber-700" /> },
+      { name: "MongoDB", icon: <Database className="w-4 h-4 text-cyan-500" /> },
+      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-yellow-300" /> }
     ]
   }
 ];
@@ -93,7 +93,9 @@ export const Skills = () => {
                 {skillGroup.items.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-2 text-sm rounded-full bg-white/10 text-white flex items-center gap-2 hover:bg-white/20 transition-colors"
+                    className={`px-3 py-2 text-sm rounded-full bg-white/10 flex items-center gap-2 hover:bg-white/20 transition-colors ${
+                      skill.name.toLowerCase() === 'git' ? 'text-white' : ''
+                    }`}
                   >
                     {skill.icon}
                     {skill.name}
