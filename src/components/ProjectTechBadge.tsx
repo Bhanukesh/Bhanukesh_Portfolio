@@ -79,35 +79,35 @@ export const ProjectTechBadge = ({ tech }: ProjectTechBadgeProps) => {
   const getTextColor = (tech: string) => {
     switch (tech.toLowerCase()) {
       // Languages
-      case 'python': return 'text-red-500';
-      case 'r': return 'text-yellow-400';
-      case 'sql': return 'text-blue-500';
-      case 'java': return 'text-orange-500';
+      case 'python': return 'text-red-300';
+      case 'r': return 'text-yellow-200';
+      case 'sql': return 'text-blue-200';
+      case 'java': return 'text-orange-200';
       
       // Frameworks
-      case 'node.js': return 'text-green-800';
+      case 'node.js': return 'text-green-200';
       case 'react': return 'text-blue-200';
-      case 'tensorflow': return 'text-purple-500';
+      case 'tensorflow': return 'text-purple-200';
       
       // Tools
-      case 'docker': return 'text-blue-900';
-      case 'aws': return 'text-orange-700';
+      case 'docker': return 'text-blue-200';
+      case 'aws': return 'text-orange-200';
       case 'git': return 'text-white';
-      case 'tableau': return 'text-pink-500';
+      case 'tableau': return 'text-pink-200';
       
       // Databases
-      case 'mysql': return 'text-amber-700';
-      case 'mongodb': return 'text-cyan-500';
-      case 'postgresql': return 'text-yellow-300';
+      case 'mysql': return 'text-amber-200';
+      case 'mongodb': return 'text-cyan-200';
+      case 'postgresql': return 'text-yellow-200';
       
       // Additional Skills
-      case 'aws lambda': return 'text-violet-600';
-      case 'aws s3': return 'text-violet-400';
-      case 'ci/cd': return 'text-emerald-500';
-      case 'kafka': return 'text-teal-500';
-      case 'data analysis': return 'text-indigo-500';
-      case 'alpha vantage api': return 'text-slate-400';
-      default: return 'text-gray-400';
+      case 'aws lambda': return 'text-violet-200';
+      case 'aws s3': return 'text-violet-200';
+      case 'ci/cd': return 'text-emerald-200';
+      case 'kafka': return 'text-teal-200';
+      case 'data analysis': return 'text-indigo-200';
+      case 'alpha vantage api': return 'text-slate-200';
+      default: return 'text-gray-200';
     }
   };
 

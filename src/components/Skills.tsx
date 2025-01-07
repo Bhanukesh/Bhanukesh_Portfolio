@@ -19,40 +19,40 @@ import {
 const skills = [
   { 
     category: "Languages", 
-    icon: <Code2 className="w-6 h-6 mb-2 text-red-500" />,
+    icon: <Code2 className="w-6 h-6 mb-2 text-red-300" />,
     items: [
-      { name: "Python", icon: <FileJson className="w-4 h-4 text-red-500" /> },
-      { name: "R", icon: <Binary className="w-4 h-4 text-yellow-400" /> },
-      { name: "SQL", icon: <Database className="w-4 h-4 text-blue-500" /> },
-      { name: "Java", icon: <Cpu className="w-4 h-4 text-orange-500" /> }
+      { name: "Python", icon: <FileJson className="w-4 h-4 text-red-300" /> },
+      { name: "R", icon: <Binary className="w-4 h-4 text-yellow-200" /> },
+      { name: "SQL", icon: <Database className="w-4 h-4 text-blue-200" /> },
+      { name: "Java", icon: <Cpu className="w-4 h-4 text-orange-200" /> }
     ]
   },
   { 
     category: "Frameworks", 
-    icon: <Workflow className="w-6 h-6 mb-2 text-green-800" />,
+    icon: <Workflow className="w-6 h-6 mb-2 text-green-200" />,
     items: [
-      { name: "Node.js", icon: <Server className="w-4 h-4 text-green-800" /> },
+      { name: "Node.js", icon: <Server className="w-4 h-4 text-green-200" /> },
       { name: "React", icon: <Code2 className="w-4 h-4 text-blue-200" /> },
-      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-purple-500" /> }
+      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-purple-200" /> }
     ]
   },
   { 
     category: "Tools", 
-    icon: <BrainCircuit className="w-6 h-6 mb-2 text-blue-900" />,
+    icon: <BrainCircuit className="w-6 h-6 mb-2 text-blue-200" />,
     items: [
-      { name: "Docker", icon: <Container className="w-4 h-4 text-blue-900" /> },
-      { name: "AWS", icon: <Cloud className="w-4 h-4 text-orange-700" /> },
+      { name: "Docker", icon: <Container className="w-4 h-4 text-blue-200" /> },
+      { name: "AWS", icon: <Cloud className="w-4 h-4 text-orange-200" /> },
       { name: "Git", icon: <Github className="w-4 h-4 text-white" /> },
-      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-pink-500" /> }
+      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-pink-200" /> }
     ]
   },
   { 
     category: "Databases", 
-    icon: <Database className="w-6 h-6 mb-2 text-amber-700" />,
+    icon: <Database className="w-6 h-6 mb-2 text-amber-200" />,
     items: [
-      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-amber-700" /> },
-      { name: "MongoDB", icon: <Database className="w-4 h-4 text-cyan-500" /> },
-      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-yellow-300" /> }
+      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-amber-200" /> },
+      { name: "MongoDB", icon: <Database className="w-4 h-4 text-cyan-200" /> },
+      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-yellow-200" /> }
     ]
   }
 ];
@@ -94,7 +94,7 @@ export const Skills = () => {
                   <span
                     key={skillIndex}
                     className={`px-3 py-2 text-sm rounded-full bg-white/10 flex items-center gap-2 hover:bg-white/20 transition-colors ${
-                      skill.name.toLowerCase() === 'git' ? 'text-white' : ''
+                      skill.name.toLowerCase() === 'git' ? 'text-white' : getTextColor(skill.name)
                     }`}
                   >
                     {skill.icon}
@@ -108,4 +108,32 @@ export const Skills = () => {
       </div>
     </section>
   );
+};
+
+// Helper function to get text color
+const getTextColor = (tech: string) => {
+  switch (tech.toLowerCase()) {
+    // Languages
+    case 'python': return 'text-red-300';
+    case 'r': return 'text-yellow-200';
+    case 'sql': return 'text-blue-200';
+    case 'java': return 'text-orange-200';
+    
+    // Frameworks
+    case 'node.js': return 'text-green-200';
+    case 'react': return 'text-blue-200';
+    case 'tensorflow': return 'text-purple-200';
+    
+    // Tools
+    case 'docker': return 'text-blue-200';
+    case 'aws': return 'text-orange-200';
+    case 'git': return 'text-white';
+    case 'tableau': return 'text-pink-200';
+    
+    // Databases
+    case 'mysql': return 'text-amber-200';
+    case 'mongodb': return 'text-cyan-200';
+    case 'postgresql': return 'text-yellow-200';
+    default: return 'text-gray-200';
+  }
 };
