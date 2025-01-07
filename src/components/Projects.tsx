@@ -28,18 +28,19 @@ const projects = [
     github: "#"
   },
   {
-    title: "Universal Analytics API",
-    description: `Developed a comprehensive analytics API with real-time visualization capabilities. Key achievements include:
-    • Created interactive dashboards for data analysis and visualization
-    • Implemented multiple visualization techniques for data representation
-    • Developed real-time data processing pipeline using Kafka for continuous updates
-    • Built scalable MySQL database architecture for efficient data storage
-    • Enhanced data accessibility and decision-making efficiency by 25%`,
-    tech: ["Python", "Docker", "CI/CD", "Kafka", "MySQL", "Tableau"],
+    title: "Automated Financial Market Analysis",
+    description: `Developed a comprehensive financial data analysis system using AWS and Python. Key achievements include:
+    • Implemented automated data fetching from Alpha Vantage API using AWS Lambda
+    • Created secure S3 bucket storage system for financial data
+    • Built Python-based data processing pipeline
+    • Configured Lambda functions for optimal performance
+    • Implemented error handling and timeout management
+    • Established regular monitoring and cost optimization protocols`,
+    tech: ["Python", "AWS Lambda", "AWS S3", "Alpha Vantage API"],
     date: "09/2024",
     images: [
-      "/lovable-uploads/04d510e5-00ed-4cce-88dc-c10deb6fa4da.png",
-      "/lovable-uploads/f793355c-af74-417c-b6ba-0f22057bb9a3.png"
+      "/lovable-uploads/4fdfc8fd-9d47-43bb-b943-414740f1220b.png",
+      "/lovable-uploads/ee7ff641-5dc2-4683-aab6-f446a9fb62ad.png"
     ],
     github: "#"
   },
