@@ -29,9 +29,18 @@ const projects = [
   },
   {
     title: "Universal Analytics API",
-    description: "Developed a scalable API that enhances real-time sentiment analysis capabilities, improving data accessibility and decision-making efficiency by 25%.",
-    tech: ["Python", "Docker", "CI/CD"],
-    date: "09/2024"
+    description: `Developed a scalable API for real-time data analysis and sentiment processing. Key achievements include:
+    • Implemented Kafka for efficient real-time data streaming
+    • Integrated MySQL for robust data storage and management
+    • Enhanced data accessibility and decision-making efficiency by 25%
+    • Created a scalable pipeline for real-time analytics integration`,
+    tech: ["Python", "Docker", "CI/CD", "Kafka", "MySQL"],
+    date: "09/2024",
+    images: [
+      "/lovable-uploads/61e2d34b-50ae-4931-82a2-c9a0aff9c44b.png",
+      "/lovable-uploads/05137ea6-96b2-4864-9646-72644a6eb2b5.png"
+    ],
+    github: "#"
   }
 ];
 
@@ -69,13 +78,13 @@ export const Projects = () => {
                 </div>
               )}
               {project.images && (
-                <div className="grid grid-cols-3 gap-2 p-4">
+                <div className="grid grid-cols-2 gap-4 p-4">
                   {project.images.map((img, imgIndex) => (
                     <img
                       key={imgIndex}
                       src={img}
                       alt={`${project.title} visualization ${imgIndex + 1}`}
-                      className="w-full h-32 object-cover rounded-lg"
+                      className="w-full h-48 object-contain rounded-lg"
                     />
                   ))}
                 </div>
