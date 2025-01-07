@@ -30,33 +30,33 @@ const getTechIcon = (tech: string) => {
     case 'java':
       return <Cpu className="w-4 h-4 text-[#8B5CF6]" />;
     case 'node.js':
-      return <Server className="w-4 h-4 text-[#9b87f5]" />;
+      return <Server className="w-4 h-4 text-[#7E69AB]" />;
     case 'react':
-      return <Code2 className="w-4 h-4 text-[#0EA5E9]" />;
+      return <Code2 className="w-4 h-4 text-[#6E59A5]" />;
     case 'tensorflow':
-      return <BrainCircuit className="w-4 h-4 text-[#D946EF]" />;
+      return <BrainCircuit className="w-4 h-4 text-[#FEC6A1]" />;
     case 'docker':
-      return <Container className="w-4 h-4 text-[#0EA5E9]" />;
+      return <Container className="w-4 h-4 text-[#E5DEFF]" />;
     case 'aws':
     case 'aws lambda':
     case 'aws s3':
-      return <Cloud className="w-4 h-4 text-[#F97316]" />;
+      return <Cloud className="w-4 h-4 text-[#FFDEE2]" />;
     case 'git':
-      return <Github className="w-4 h-4 text-[#9b87f5]" />;
+      return <Github className="w-4 h-4 text-[#FDE1D3]" />;
     case 'tableau':
-      return <BarChart className="w-4 h-4 text-[#8B5CF6]" />;
+      return <BarChart className="w-4 h-4 text-[#D3E4FD]" />;
     case 'mysql':
     case 'mongodb':
     case 'postgresql':
-      return <Table2 className="w-4 h-4 text-[#F97316]" />;
+      return <Table2 className="w-4 h-4 text-[#F2FCE2]" />;
     case 'ci/cd':
-      return <Workflow className="w-4 h-4 text-[#F97316]" />;
+      return <Workflow className="w-4 h-4 text-[#FEF7CD]" />;
     case 'kafka':
-      return <Network className="w-4 h-4 text-[#D946EF]" />;
+      return <Network className="w-4 h-4 text-[#9b87f5]" />;
     case 'data analysis':
-      return <BarChart className="w-4 h-4 text-[#8B5CF6]" />;
+      return <BarChart className="w-4 h-4 text-[#0EA5E9]" />;
     default:
-      return <Code2 className="w-4 h-4 text-[#9b87f5]" />;
+      return <Code2 className="w-4 h-4 text-[#8B5CF6]" />;
   }
 };
 
