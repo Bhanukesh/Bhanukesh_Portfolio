@@ -30,9 +30,9 @@ const getTechIcon = (tech: string) => {
     case 'java':
       return <Cpu className="w-4 h-4 text-[#8B5CF6]" />;
     case 'node.js':
-      return <Server className="w-4 h-4 text-[#7E69AB]" />;
+      return <Server className="w-4 h-4 text-[#403E43]" />;
     case 'react':
-      return <Code2 className="w-4 h-4 text-[#6E59A5]" />;
+      return <Code2 className="w-4 h-4 text-[#33C3F0]" />;
     case 'tensorflow':
       return <BrainCircuit className="w-4 h-4 text-[#FEC6A1]" />;
     case 'docker':
@@ -40,9 +40,9 @@ const getTechIcon = (tech: string) => {
     case 'aws':
     case 'aws lambda':
     case 'aws s3':
-      return <Cloud className="w-4 h-4 text-[#FFDEE2]" />;
+      return <Cloud className="w-4 h-4 text-[#C8C8C9]" />;
     case 'git':
-      return <Github className="w-4 h-4 text-[#FDE1D3]" />;
+      return <Github className="w-4 h-4 text-[#ea384c]" />;
     case 'tableau':
       return <BarChart className="w-4 h-4 text-[#D3E4FD]" />;
     case 'mysql':
@@ -52,11 +52,11 @@ const getTechIcon = (tech: string) => {
     case 'ci/cd':
       return <Workflow className="w-4 h-4 text-[#FEF7CD]" />;
     case 'kafka':
-      return <Network className="w-4 h-4 text-[#9b87f5]" />;
+      return <Network className="w-4 h-4 text-[#6E59A5]" />;
     case 'data analysis':
-      return <BarChart className="w-4 h-4 text-[#0EA5E9]" />;
+      return <BarChart className="w-4 h-4 text-[#1EAEDB]" />;
     default:
-      return <Code2 className="w-4 h-4 text-[#8B5CF6]" />;
+      return <Code2 className="w-4 h-4 text-[#7E69AB]" />;
   }
 };
 
