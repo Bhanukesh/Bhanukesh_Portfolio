@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import { ProjectTechBadge } from "./ProjectTechBadge";
 
 const projects = [
   {
@@ -190,15 +191,12 @@ export const Projects = () => {
                     )}
                   </div>
                 </div>
-                <p className="text-muted-foreground mb-6 whitespace-pre-line text-lg leading-relaxed">{project.description}</p>
+                <p className="text-muted-foreground mb-6 whitespace-pre-line text-lg leading-relaxed">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-3">
                   {project.tech.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-4 py-2 text-sm rounded-full bg-secondary text-secondary-foreground font-medium"
-                    >
-                      {tech}
-                    </span>
+                    <ProjectTechBadge key={techIndex} tech={tech} />
                   ))}
                 </div>
               </div>

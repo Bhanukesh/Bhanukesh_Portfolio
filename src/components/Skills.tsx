@@ -7,48 +7,55 @@ import {
   BrainCircuit,
   BarChart,
   Github,
-  Table2
+  Table2,
+  Binary,
+  FileJson,
+  Server,
+  Cpu,
+  Container,
+  Network
 } from "lucide-react";
 
 const skills = [
   { 
     category: "Languages", 
     icon: <Code2 className="w-6 h-6 mb-2" />,
-    items: ["Python", "R", "SQL", "Java"] 
+    items: [
+      { name: "Python", icon: <FileJson className="w-4 h-4" /> },
+      { name: "R", icon: <Binary className="w-4 h-4" /> },
+      { name: "SQL", icon: <Database className="w-4 h-4" /> },
+      { name: "Java", icon: <Cpu className="w-4 h-4" /> }
+    ]
   },
   { 
     category: "Frameworks", 
     icon: <Workflow className="w-6 h-6 mb-2" />,
-    items: ["Node.js", "React", "TensorFlow"] 
+    items: [
+      { name: "Node.js", icon: <Server className="w-4 h-4" /> },
+      { name: "React", icon: <Code2 className="w-4 h-4" /> },
+      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4" /> }
+    ]
   },
   { 
     category: "Tools", 
     icon: <BrainCircuit className="w-6 h-6 mb-2" />,
-    items: ["Docker", "AWS", "Git", "Tableau"] 
+    items: [
+      { name: "Docker", icon: <Container className="w-4 h-4" /> },
+      { name: "AWS", icon: <Cloud className="w-4 h-4" /> },
+      { name: "Git", icon: <Github className="w-4 h-4" /> },
+      { name: "Tableau", icon: <BarChart className="w-4 h-4" /> }
+    ]
   },
   { 
     category: "Databases", 
     icon: <Database className="w-6 h-6 mb-2" />,
-    items: ["MySQL", "MongoDB", "PostgreSQL"] 
+    items: [
+      { name: "MySQL", icon: <Table2 className="w-4 h-4" /> },
+      { name: "MongoDB", icon: <Database className="w-4 h-4" /> },
+      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4" /> }
+    ]
   }
 ];
-
-const getItemIcon = (item: string) => {
-  switch (item.toLowerCase()) {
-    case 'aws':
-      return <Cloud className="w-4 h-4" />;
-    case 'git':
-      return <Github className="w-4 h-4" />;
-    case 'tableau':
-      return <BarChart className="w-4 h-4" />;
-    case 'mysql':
-    case 'mongodb':
-    case 'postgresql':
-      return <Table2 className="w-4 h-4" />;
-    default:
-      return null;
-  }
-};
 
 export const Skills = () => {
   return (
@@ -84,8 +91,8 @@ export const Skills = () => {
                     key={skillIndex}
                     className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary flex items-center gap-2"
                   >
-                    {getItemIcon(skill)}
-                    {skill}
+                    {skill.icon}
+                    {skill.name}
                   </span>
                 ))}
               </div>
