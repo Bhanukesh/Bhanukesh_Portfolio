@@ -59,8 +59,9 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-secondary/50">
-      <div className="container mx-auto px-4">
+    <section id="skills" className="py-20 bg-gradient-to-br from-[#0EA5E9] to-[#8B5CF6] relative">
+      <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+      <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,8 +69,8 @@ export const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Skills</h2>
-          <p className="text-muted-foreground">Technical expertise and tools</p>
+          <h2 className="text-3xl font-bold mb-4 text-white text-shadow-lg">Skills</h2>
+          <p className="text-white/80">Technical expertise and tools</p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skills.map((skillGroup, index) => (
@@ -79,17 +80,19 @@ export const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="glass-card rounded-lg p-6"
+              className="glass-card rounded-lg p-6 hover:transform hover:scale-[1.02] transition-all duration-300"
             >
               <div className="flex flex-col items-center mb-4">
-                {skillGroup.icon}
-                <h3 className="text-xl font-semibold">{skillGroup.category}</h3>
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3">
+                  {skillGroup.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white">{skillGroup.category}</h3>
               </div>
               <div className="flex flex-wrap gap-2">
                 {skillGroup.items.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className="px-3 py-1 text-sm rounded-full bg-primary/10 text-primary flex items-center gap-2"
+                    className="px-3 py-2 text-sm rounded-full bg-white/10 text-white flex items-center gap-2 hover:bg-white/20 transition-colors"
                   >
                     {skill.icon}
                     {skill.name}

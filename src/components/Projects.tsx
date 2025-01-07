@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
-import { ProjectTechBadge } from "./ProjectTechBadge";
+import { ProjectCard } from "./ProjectCard";
 
 const projects = [
   {
@@ -122,8 +121,9 @@ The system now successfully automates financial data collection, storage, and pr
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="projects" className="py-20 bg-gradient-to-br from-[#8B5CF6] to-[#D946EF] relative">
+      <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+      <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -131,76 +131,12 @@ export const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-4">Projects</h2>
-          <p className="text-muted-foreground">Featured work and achievements</p>
+          <h2 className="text-3xl font-bold mb-4 text-white text-shadow-lg">Projects</h2>
+          <p className="text-white/80">Featured work and achievements</p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              className="glass-card rounded-lg overflow-hidden hover:shadow-2xl transition-shadow"
-            >
-              {project.image && (
-                <div className="relative h-64 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover object-top"
-                  />
-                </div>
-              )}
-              {project.images && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
-                  {project.images.map((img, imgIndex) => (
-                    <img
-                      key={imgIndex}
-                      src={img}
-                      alt={`${project.title} visualization ${imgIndex + 1}`}
-                      className="w-full h-64 object-contain rounded-lg cursor-pointer hover:scale-105 transition-transform"
-                    />
-                  ))}
-                </div>
-              )}
-              <div className="p-8">
-                <div className="flex justify-between items-start mb-6">
-                  <h3 className="text-2xl font-semibold">{project.title}</h3>
-                  <div className="flex gap-3">
-                    {project.github && (
-                      <a 
-                        href={project.github} 
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="w-6 h-6" />
-                      </a>
-                    )}
-                    {project.liveUrl && (
-                      <a 
-                        href={project.liveUrl} 
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="w-6 h-6" />
-                      </a>
-                    )}
-                  </div>
-                </div>
-                <p className="text-muted-foreground mb-6 whitespace-pre-line text-lg leading-relaxed">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  {project.tech.map((tech, techIndex) => (
-                    <ProjectTechBadge key={techIndex} tech={tech} />
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+            <ProjectCard key={index} project={project} index={index} />
           ))}
         </div>
       </div>
