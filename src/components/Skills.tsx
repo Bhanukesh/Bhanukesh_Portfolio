@@ -22,37 +22,37 @@ const skills = [
     icon: <Code2 className="w-6 h-6 mb-2 text-red-300" />,
     items: [
       { name: "Python", icon: <FileJson className="w-4 h-4 text-red-300" /> },
-      { name: "R", icon: <Binary className="w-4 h-4 text-yellow-200" /> },
-      { name: "SQL", icon: <Database className="w-4 h-4 text-blue-200" /> },
-      { name: "Java", icon: <Cpu className="w-4 h-4 text-orange-200" /> }
+      { name: "R", icon: <Binary className="w-4 h-4 text-yellow-300" /> },
+      { name: "SQL", icon: <Database className="w-4 h-4 text-blue-300" /> },
+      { name: "Java", icon: <Cpu className="w-4 h-4 text-orange-300" /> }
     ]
   },
   { 
     category: "Frameworks", 
-    icon: <Workflow className="w-6 h-6 mb-2 text-green-200" />,
+    icon: <Workflow className="w-6 h-6 mb-2 text-green-300" />,
     items: [
-      { name: "Node.js", icon: <Server className="w-4 h-4 text-green-200" /> },
+      { name: "Node.js", icon: <Server className="w-4 h-4 text-green-300" /> },
       { name: "React", icon: <Code2 className="w-4 h-4 text-blue-200" /> },
-      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-purple-200" /> }
+      { name: "TensorFlow", icon: <BrainCircuit className="w-4 h-4 text-purple-300" /> }
     ]
   },
   { 
     category: "Tools", 
-    icon: <BrainCircuit className="w-6 h-6 mb-2 text-blue-200" />,
+    icon: <BrainCircuit className="w-6 h-6 mb-2 text-blue-300" />,
     items: [
-      { name: "Docker", icon: <Container className="w-4 h-4 text-blue-200" /> },
-      { name: "AWS", icon: <Cloud className="w-4 h-4 text-orange-200" /> },
+      { name: "Docker", icon: <Container className="w-4 h-4 text-blue-300" /> },
+      { name: "AWS", icon: <Cloud className="w-4 h-4 text-orange-300" /> },
       { name: "Git", icon: <Github className="w-4 h-4 text-white" /> },
-      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-pink-200" /> }
+      { name: "Tableau", icon: <BarChart className="w-4 h-4 text-pink-300" /> }
     ]
   },
   { 
     category: "Databases", 
-    icon: <Database className="w-6 h-6 mb-2 text-amber-200" />,
+    icon: <Database className="w-6 h-6 mb-2 text-amber-300" />,
     items: [
-      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-amber-200" /> },
-      { name: "MongoDB", icon: <Database className="w-4 h-4 text-cyan-200" /> },
-      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-yellow-200" /> }
+      { name: "MySQL", icon: <Table2 className="w-4 h-4 text-amber-300" /> },
+      { name: "MongoDB", icon: <Database className="w-4 h-4 text-cyan-300" /> },
+      { name: "PostgreSQL", icon: <Table2 className="w-4 h-4 text-yellow-300" /> }
     ]
   }
 ];
@@ -93,7 +93,7 @@ export const Skills = () => {
                 {skillGroup.items.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className={`px-3 py-2 text-sm rounded-full bg-white/10 flex items-center gap-2 hover:bg-white/20 transition-colors ${
+                    className={`px-3 py-2 text-sm rounded-full bg-white/10 backdrop-blur-sm flex items-center gap-2 hover:bg-white/20 transition-colors ${
                       skill.name.toLowerCase() === 'git' ? 'text-white' : getTextColor(skill.name)
                     }`}
                   >
@@ -115,25 +115,25 @@ const getTextColor = (tech: string) => {
   switch (tech.toLowerCase()) {
     // Languages
     case 'python': return 'text-red-300';
-    case 'r': return 'text-yellow-200';
-    case 'sql': return 'text-blue-200';
-    case 'java': return 'text-orange-200';
+    case 'r': return 'text-yellow-300';
+    case 'sql': return 'text-blue-300';
+    case 'java': return 'text-orange-300';
     
     // Frameworks
-    case 'node.js': return 'text-green-200';
+    case 'node.js': return 'text-green-300';
     case 'react': return 'text-blue-200';
-    case 'tensorflow': return 'text-purple-200';
+    case 'tensorflow': return 'text-purple-300';
     
     // Tools
-    case 'docker': return 'text-blue-200';
-    case 'aws': return 'text-orange-200';
+    case 'docker': return 'text-blue-300';
+    case 'aws': return 'text-orange-300';
     case 'git': return 'text-white';
-    case 'tableau': return 'text-pink-200';
+    case 'tableau': return 'text-pink-300';
     
     // Databases
-    case 'mysql': return 'text-amber-200';
-    case 'mongodb': return 'text-cyan-200';
-    case 'postgresql': return 'text-yellow-200';
-    default: return 'text-gray-200';
+    case 'mysql': return 'text-amber-300';
+    case 'mongodb': return 'text-cyan-300';
+    case 'postgresql': return 'text-yellow-300';
+    default: return 'text-gray-300';
   }
 };
