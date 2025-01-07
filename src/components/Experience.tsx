@@ -6,21 +6,29 @@ const experiences = [
     company: "CU Denver Business School",
     period: "04/2023 - 12/2024",
     location: "Denver, US",
-    description: "Led CU Denver's Generative AI for Clinical Decision Support project, improving patient care and provider efficacy with AI-driven models."
+    description: `Led CU Denver's Generative AI for Clinical Decision Support project, improving patient care and provider efficacy with AI-driven models.
+
+• Boosted patient care efficiency by 20% using predictive analytics with R & Python
+• Developed an AI healthcare course, adopted by over 200 professionals`
   },
   {
     title: "Apprenticeship",
     company: "KPMG",
     period: "12/2022 - 02/2023",
     location: "India",
-    description: "Analyzed 1,295 records to identify attrition factors, achieving precision and recall of 99%."
+    description: `Analyzed 1,295 records to identify attrition factors, achieving precision and recall of 99%.
+
+• Developed Tableau dashboards for HR teams, enabling proactive retention strategies`
   },
   {
     title: "Data Analyst",
     company: "Murali & Co., Chartered Accountants",
     period: "11/2021 - 11/2022",
     location: "Hyderabad, India",
-    description: "Corrected revenue forecasts by 30% through predictive modeling."
+    description: `Corrected revenue forecasts by 30% through predictive modeling.
+
+• Consolidated data from diverse sources, boosting processing efficiency by 25%
+• Designed 30+ dashboards with Power BI & Tableau for real-time financial decisions`
   }
 ];
 
@@ -58,7 +66,7 @@ export const Experience = () => {
                 </div>
                 <p className="text-lg text-white/90 mb-2">{exp.company}</p>
                 <p className="text-sm text-white/80 mb-2">{exp.location}</p>
-                <p className="text-white/80">{exp.description}</p>
+                <p className="text-white/80 whitespace-pre-line">{exp.description}</p>
               </div>
             </motion.div>
           ))}
