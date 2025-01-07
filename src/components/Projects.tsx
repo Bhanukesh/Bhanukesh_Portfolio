@@ -50,6 +50,35 @@ const projects = [
       "/lovable-uploads/37a40563-4a16-4955-adb7-d649de06ffb1.png"
     ],
     github: "#"
+  },
+  {
+    title: "COVID-19 Spread Across the US",
+    description: `Analyzed COVID-19 data across US states using multiple visualization techniques to provide comprehensive insights:
+
+    Visualization Techniques:
+    • Bar Graphs: Comparing new cases and deaths by state
+    • Tree Maps: Showing case proportions with size and color intensity
+    • Geographic Maps: Visualizing outbreak sizes across states
+    • Horizontal Bar Charts: Detailed state-by-state comparisons
+    • Bubble Charts: Representing probable cases and deaths
+    • Scatter Plots: Analyzing case-fatality correlations
+    • Dark-themed Maps: Highlighting severity distribution
+    
+    Key Features:
+    • Interactive dashboards for real-time monitoring
+    • Multi-dimensional data visualization
+    • State-by-state comparative analysis
+    • Trend identification and pattern recognition
+    
+    Impact:
+    These visualizations enable stakeholders to make informed decisions about resource allocation, policy implementation, and public health strategies through clear, immediate visual insights into pandemic patterns and trends.`,
+    tech: ["Tableau", "Python", "Data Analysis", "SQL"],
+    date: "03/2024",
+    images: [
+      "/lovable-uploads/ac506a49-3aff-44b1-a184-f30e1f2fccc1.png",
+      "/lovable-uploads/2e773431-048b-45e9-85b7-710e563e6ccd.png"
+    ],
+    github: "#"
   }
 ];
 
