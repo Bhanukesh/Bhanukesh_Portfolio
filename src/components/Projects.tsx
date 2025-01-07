@@ -29,20 +29,12 @@ const projects = [
   },
   {
     title: "Universal Analytics API",
-    description: `Developed a comprehensive COVID-19 data analysis API with real-time visualization capabilities. Key achievements include:
-    • Created interactive dashboards analyzing COVID-19 data across US states
-    • Implemented multiple visualization techniques including geographical maps, tree maps, and scatter plots
+    description: `Developed a comprehensive analytics API with real-time visualization capabilities. Key achievements include:
+    • Created interactive dashboards for data analysis and visualization
+    • Implemented multiple visualization techniques for data representation
     • Developed real-time data processing pipeline using Kafka for continuous updates
     • Built scalable MySQL database architecture for efficient data storage
-    • Enhanced data accessibility and decision-making efficiency by 25%
-    
-    Visualization Highlights:
-    • Geographic distribution analysis with interactive maps
-    • Comparative analysis of cases vs. deaths using scatter plots
-    • State-wise impact assessment using tree maps
-    • Trend analysis using time-series visualizations
-    
-    The dashboards provide comprehensive insights for stakeholders to make informed decisions regarding resource allocation and public health strategies.`,
+    • Enhanced data accessibility and decision-making efficiency by 25%`,
     tech: ["Python", "Docker", "CI/CD", "Kafka", "MySQL", "Tableau"],
     date: "09/2024",
     images: [
